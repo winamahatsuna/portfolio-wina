@@ -10,17 +10,18 @@ const navLinks = [
   { name: "Projects", href: "#projects" },
   { name: "Certificate", href: "#certificate" },
   { name: "Experience", href: "#experience" },
+  { name: "Contact", href: "#contact" },
 ];
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <header className="fixed inset-x-0 top-0 z-50 border-b border-[#6B2636]/10 bg-white/95 text-[#6B2636] shadow-sm backdrop-blur-md">
+    <header className="fixed inset-x-0 top-0 z-50 border-b border-white/10 bg-[#572333]/95 text-white shadow-md backdrop-blur-md">
       <nav className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-5 py-4 lg:px-10">
         <a
           href="#home"
-          className="text-sm font-bold tracking-tight sm:text-base lg:text-lg"
+          className="text-sm font-bold tracking-tight text-white transition duration-300 hover:text-[#D6A0AA] sm:text-base lg:text-lg"
         >
           Wina Mahatsuna Atsmara Hanifah
           <span className="text-[#D6A0AA]">.</span>
@@ -31,7 +32,7 @@ export default function Header() {
             <a
               key={link.name}
               href={link.href}
-              className="text-sm font-medium transition duration-300 hover:text-[#D6A0AA]"
+              className="text-sm font-medium text-white/90 transition duration-300 hover:text-[#D6A0AA]"
             >
               {link.name}
             </a>
@@ -43,20 +44,20 @@ export default function Header() {
           aria-label="Toggle navigation"
           aria-expanded={menuOpen}
           onClick={() => setMenuOpen(!menuOpen)}
-          className="rounded-lg border border-[#D6A0AA]/60 px-3 py-2 text-sm text-[#6B2636] transition hover:bg-[#FFF8F7] md:hidden"
+          className="rounded-lg border border-[#D6A0AA]/60 px-3 py-2 text-sm text-white transition hover:bg-[#D6A0AA] hover:text-[#572333] md:hidden"
         >
           {menuOpen ? "Tutup ✕" : "Menu ☰"}
         </button>
       </nav>
 
       {menuOpen && (
-        <div className="border-t border-[#6B2636]/10 bg-white px-5 py-3 md:hidden">
+        <div className="border-t border-white/10 bg-[#572333] px-5 py-3 md:hidden">
           {navLinks.map((link) => (
             <a
               key={link.name}
               href={link.href}
               onClick={() => setMenuOpen(false)}
-              className="block rounded-lg px-3 py-3 text-sm transition hover:bg-[#FFF8F7] hover:text-[#D6A0AA]"
+              className="block rounded-lg px-3 py-3 text-sm text-white/90 transition hover:bg-white/10 hover:text-[#D6A0AA]"
             >
               {link.name}
             </a>

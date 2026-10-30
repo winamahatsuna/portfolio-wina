@@ -5,7 +5,7 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "Wina Mahatsuna Atsmara Hanifah | Portfolio",
   description:
-    "Personal portfolio of Wina Mahatsuna Atsmara Hanifah, UI/UX Designer.",
+    "Personal portfolio of Wina Mahatsuna Atsmara Hanifah, UI/UX Designer and Frontend Developer.",
 };
 
 export default function RootLayout({
