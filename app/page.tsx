@@ -655,6 +655,12 @@ export default function Home() {
                   value: "www.linkedin.com/in/winamahatsuna",
                 },
                 {
+                  icon: "⌘",
+                  label: "GITHUB",
+                  value: "github.com/winamahatsuna",
+                  link: "https://github.com/winamahatsuna",
+                },
+                {
                   icon: "✉",
                   label: "EMAIL",
                   value: "winamhtsna@gmail.com",
@@ -677,9 +683,20 @@ export default function Home() {
                     {item.label}
                   </p>
 
+                  {item.link ? (
+                  <a
+                    href={item.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="mt-3 block break-all text-sm font-medium leading-6 text-[#572333] transition hover:text-[#A85F75] hover:underline"
+                  >
+                    {item.value} ↗
+                  </a>
+                ) : (
                   <p className="mt-3 break-all text-sm font-medium leading-6 text-[#572333]">
                     {item.value}
                   </p>
+                )}
                 </div>
               ))}
             </div>
