@@ -79,13 +79,13 @@ const projects = [
   },
   {
     number: "02",
-    title: "QE Deployment",
-    category: "Web Development",
+    title: "Indismart",
+    category: "UI/UX Design, Web Development & Mobile App Design",
     description:
-      "Pengembangan website untuk mendukung dokumentasi dan pengelolaan data deployment, termasuk informasi proyek, lokasi, status, dan dokumentasi foto.",
-    tags: ["Laravel", "PHP", "Web Development"],
-    image: null,
-    link: null,
+      "Perancangan UI/UX untuk platform Indismart yang mencakup website dan aplikasi mobile. Berfokus pada pembuatan antarmuka yang intuitif, responsif, dan mudah digunakan untuk memberikan pengalaman digital yang optimal.",
+    tags: ["UI/UX Design", "Figma", "Prototyping, Wireframing", "Website Design", "Mobile App Design", "User Research"],
+    image: "/projects/indismart-cover.png",
+    link: "https://www.behance.net/gallery/258106037/Indismart",
   },
   {
     number: "03",
@@ -106,6 +106,24 @@ const projects = [
     tags: ["UI/UX Design", "Marketplace", "Catering"],
     image: "/projects/qateringgo-cover.png",
     link: "https://www.behance.net/gallery/257755261/QateringGO",
+  },
+
+  {
+    number: "03",
+    title: "TMS – Teaching Management System (NURANI)",
+    category: "UI/UX Design & Web Application",
+    description:
+      "Perancangan antarmuka dan pengalaman pengguna Teaching Management System (TMS) NURANI sebagai sistem digital untuk mendukung pengelolaan aktivitas dan administrasi pembelajaran. Berfokus pada kemudahan penggunaan, struktur informasi, dan pengalaman pengguna.",
+    tags: [
+      "UI/UX Design",
+      "Web Application",
+      "Figma",
+      "User Interface",
+      "Prototyping",
+      "Dashboard Design",
+    ],
+    image: "/projects/tms-cover.png",
+    link: "https://www.behance.net/gallery/258105167/Teaching-Management-System-%28NURANI%29",
   },
 
 ];
